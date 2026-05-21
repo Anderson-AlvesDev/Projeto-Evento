@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #09090b;
+    color: #fafafa;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiqueta {
+    color: #ffffff;
+}
+h1 { 
+    font-size: 52px;
+    font-weight: 800;
+    color: #fafafa;
+}
+
+span {
+    color: #a78bfa;
+}
+
+.subtitulo {
+    color: #71717a;
+    margin-top: 16px;
+    font-size: 18px;
+}
+.caixa-entrada {
+    width: 620px;
+    background: #141419;
+    border-radius: 16px;
+    padding: 12px;
+    margin-top: 30px;
+    display: flex;
+}
+
+textarea {
+    width: 80%;
+    resize: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+    color: #fafafa;
+    font-size: 15px;
+    border: none;
+}
+
+button {
+    width: 20%;
+    padding: 10px 24px;
+    color: #ffffff;
+    background: #7c3aed;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.caixa-resultado {
+    width: 1400px;
+    display: flex;
+    margin-top: 40px;
+    padding: 24px;
+    background: #111114;
+    border-radius: 12px;
+    border: 1px solid #27272a;
+    gap: 24px;
+}
+
+.bloco-codigo {
+    width: 30%;
+    background: #0c0c0f;
+    padding: 20px;
+    font-size: 12px;
+    color: #22c55e;
+    white-space: pre-wrap;
+    overflow: auto;
+    height: 600px;
+    border-radius: 12px;
+    border: 1px solid #27272a;
+}
+
+.bloco-site {
+    width: 70%;
+    height: 600px;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+}
+
+@media screen and (max-width:1400px) {
+    .caixa-resultado {
+        width: 700px;
+        height: auto;
+    }
+}
+
+@media  screen and (max-width:660px) {
+    .etiqueta {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 42px;
+        width: 97%;
+        text-align: center;
+    }
+
+    .subtitulo {
+        margin: 10px 10px;
+    }
+
+    .caixa-entrada {
+        width: 100%;
+        margin: 10px 10px;
+    }
+
+    .bloco-codigo {
+        display: none;
+    }
+
+    .caixa-resultado {
+        width: 98%;
+        padding: 0;
+    }
+
+    .bloco-site {
+        width: 110%;
+    }
+}
