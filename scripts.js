@@ -1,4 +1,3 @@
-let chave = "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"
 let endereco = "https://api.groq.com/openai/v1/chat/completions"
 let prompt = `Você é um designer web premiado e programador.
 Crie uma landing page COMPLETA e VISUALMENTE IMPRESSIONANTE para o negócio descrito.
@@ -30,7 +29,7 @@ async function gerarCodigo() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer " + chave
+            "Authorization": "Bearer " + "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"
         },
         body: JSON.stringify({
             "model": "llama-3.3-70b-versatile",
